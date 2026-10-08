@@ -1,0 +1,209 @@
+{
+  "main": {
+    "id": "d85ce3dc1497ff4b",
+    "type": "split",
+    "children": [
+      {
+        "id": "151f3ae6bd0d9fee",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "ffb6a8fa9e107b60",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Using Objects week2 part 1.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Using Objects week2 part 1"
+            }
+          },
+          {
+            "id": "57b468e7537c79b6",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Abstraction, Inheritance and Interfaces.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Abstraction, Inheritance and Interfaces"
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "6f8be43bb9f0576c",
+    "type": "split",
+    "children": [
+      {
+        "id": "39b8c2cc0c771c39",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "4461ce0d07c82840",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "cf33c924da52c6d3",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "718c135a63103356",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "c791edec77d9ee34",
+    "type": "split",
+    "children": [
+      {
+        "id": "6ee012ea49cce4f8",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "71011c6cc80e31bc",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Abstraction, Inheritance and Interfaces.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for Abstraction, Inheritance and Interfaces"
+            }
+          },
+          {
+            "id": "7f4f97ec0680007b",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Abstraction, Inheritance and Interfaces.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from Abstraction, Inheritance and Interfaces"
+            }
+          },
+          {
+            "id": "8e48b771cc44854b",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "52b63fdf95977346",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          },
+          {
+            "id": "026b20ad57df4634",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Abstraction, Inheritance and Interfaces.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of Abstraction, Inheritance and Interfaces"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false
+    }
+  },
+  "active": "57b468e7537c79b6",
+  "lastOpenFiles": [
+    "Anand Panduranga(Mister Anand).md",
+    "Abstraction, Inheritance and Interfaces.md",
+    "Using Objects week2 part 1.md",
+    "Project(Campus QuestStudent activities & achievement tracker).md",
+    "Assessment.md"
+  ]
+}
