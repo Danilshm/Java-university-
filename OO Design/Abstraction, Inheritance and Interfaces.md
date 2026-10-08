@@ -24,7 +24,7 @@ public class Car extends Vehicle { // "extends" works to inherit from superclass
 ```
 
 ## Interface
-- A _Java_ _interface_ is a bit like a **Java class**, except a Java interface can only contain method signatures and fields. A Java interface is not intended to contain implementations of the methods, only the signature (name, parameters and exceptions) of the method. However, it is possible to provide default implememntations of a method in a Java interface, to make the implementation of the interface easier for classes implementing the interface.
+- A _Java_ _interface_ is a bit like a **Java class**, except a Java interface can only contain method signatures and fields. A Java interface is not intended to contain implementations of the methods, only the signature (name, parameters and exceptions) of the method. However, it is possible to provide default implememntations of a method in a Java interface, to make the implementation of the interface easier for classes implementing the interface. [[Interface#Interface|Interface]]
 ## Interfaces vs Inheritance 
 - Inheritance is intended to allow you to share an implementation.
 - while an interface specifies that you must implement something, but supply your own logic.
@@ -66,10 +66,6 @@ public class Circle extends Shape {
 - **The "L" in SOLID:** It is the third design principle in object-oriented programming.
 - **Behavioral Contract:** A subclass must honor the rules, methods, and expectations set by its parent class or interface.
 - **No Surprises:** If code works with a parent type, swapping it for a child type should run smoothly without throwing unexpected errors or changing logic
-## Converting a superclass to a subclass 
-
-
-
 ## Upcasting and downcasting
 - Upcasting is automatic, whereas downcasting requires a manual cast
 	- Upcasting can't fail
@@ -87,4 +83,4 @@ public class Main {
 }
 ```
 ## Dynamic Method Lookup
-- При вызове переопределенного метода виртуальная машина динамически находит и вызывает именно ту версию метода, которая определена в подклассе. Данный процесс еще называется dynamic method lookup.[[Polymorphism#Виды полиморфизма в Java|Dynamic]]
+- При вызове переопределенного метода виртуальная машина динамически находит и вызывает именно ту версию метода, которая определена в подклассе. Данный процесс еще называется dynamic method lookup.[[Polymorphism#Динамический (время выполнения / Overriding) Abstraction, Inheritance and Interfaces Overriding methods Overriding|Dynamic]]
