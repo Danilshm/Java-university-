@@ -86,9 +86,37 @@
               "icon": "lucide-file",
               "title": "Encapsulation"
             }
+          },
+          {
+            "id": "b685bf92290a6262",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Lambda Expressions.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Lambda Expressions"
+            }
+          },
+          {
+            "id": "38b801e72bc3eef2",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Aggregation and Composition.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Aggregation and Composition"
+            }
           }
         ],
-        "currentTab": 5
+        "currentTab": 7
       }
     ],
     "direction": "vertical"
@@ -161,7 +189,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Encapsulation.md",
+                "file": "Aggregation and Composition.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -171,7 +199,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Encapsulation"
+              "title": "Backlinks for Aggregation and Composition"
             }
           },
           {
@@ -180,12 +208,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Encapsulation.md",
+                "file": "Aggregation and Composition.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Encapsulation"
+              "title": "Outgoing links from Aggregation and Composition"
             }
           },
           {
@@ -223,13 +251,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Encapsulation.md",
+                "file": "Aggregation and Composition.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Encapsulation"
+              "title": "Outline of Aggregation and Composition"
             }
           }
         ]
@@ -250,21 +278,23 @@
       "bases:Create new base": false
     }
   },
-  "active": "1d3f3b1dfb2294a7",
+  "active": "38b801e72bc3eef2",
   "lastOpenFiles": [
-    "Interface.md",
-    "Abstraction, Inheritance and Interfaces.md",
-    "Encapsulation.md",
-    "Overriding.md",
-    "Polymorphism.md",
-    "Static Dynamic.md",
+    "just dont need/Using Objects week2 part 1.md",
+    "just dont need/Project(Campus QuestStudent activities & achievement tracker).md",
     "just dont need/Anand Panduranga(Mister Anand).md",
+    "just dont need/Assessment.md",
+    "Abstraction, Inheritance and Interfaces.md",
+    "Polymorphism.md",
+    "Aggregation and Composition.md",
+    "Lambda Expressions.md",
+    "Encapsulation.md",
+    "Interface.md",
+    "Overriding.md",
+    "Static Dynamic.md",
     "images/Pasted image 20260921111850.png",
     "images/Pasted image 20260921112754.png",
     "images/Pasted image 20260921113319.png",
-    "just dont need/Project(Campus QuestStudent activities & achievement tracker).md",
-    "just dont need/Using Objects week2 part 1.md",
-    "just dont need/Assessment.md",
     "Untitled 1.canvas",
     "Untitled.canvas",
     "just dont need"
