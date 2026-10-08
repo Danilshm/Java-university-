@@ -38,13 +38,14 @@ public class Car extends Vehicle { // "extends" works to inherit from superclass
 - Shares implementation.
 ## super, this, private, protected 
 ### super
-- super is a keyword that refers to the super-class object(as opposed to **this**, which refers to 'self)
-- It can be used to access the super class constructors and methods. super(), super.toString() super.cost()
+- `super` is a keyword that refers to the super-class object(as opposed to **this**, which refers to 'self)
+- It is used to call superclass methods, and to access the superclass constructor.
+
+The most common use of the `super` keyword is to eliminate the confusion between superclasses and subclasses that have methods with the same name.
 ### private
-- A super class private fiels cannot be accessed directly by a subclass. Must use the super class methods 
+- A super class `private` fiels cannot be accessed directly by a subclass. Must use the super class methods 
 ### protected
-
-
+The `protected` keyword is an access modifier used for attributes, methods and constructors, making them accessible in the same package and subclasses.
 ### super() constructor 
 - The subclass must call the superclass constructor as the first line of its own constructor The inherited fields must be instantiated before the extra fields.
 ``` 
@@ -60,3 +61,30 @@ public class Circle extends Shape {
 - An overriding method can either:
 	- Extend
 	- Replace
+##  Substitution Principle in Java
+- It asserts that objects of a superclass should be replaceable with objects of a subclass without affecting the correctness of the program. In Java, this principle is often referred to as the Liskov Substitution Principle (LSP).
+- **The "L" in SOLID:** It is the third design principle in object-oriented programming.
+- **Behavioral Contract:** A subclass must honor the rules, methods, and expectations set by its parent class or interface.
+- **No Surprises:** If code works with a parent type, swapping it for a child type should run smoothly without throwing unexpected errors or changing logic
+## Converting a superclass to a subclass 
+
+
+
+## Upcasting and downcasting
+- Upcasting is automatic, whereas downcasting requires a manual cast
+	- Upcasting can't fail
+	- Downcasting is dangerous
+### Downcasting using pattern matching 
+- When downcasting you can dynamically check the type using the `instanceof` operator
+- Furthermore, pattern matching can conduct the cast for you should  the types match 
+```
+java
+public class Main {
+  public static void main(String[] args) {
+    Main myObj = new Main();
+    System.out.println(myObj instanceof Main); // returns true
+  }
+}
+```
+## Dynamic Method Lookup
+- При вызове переопределенного метода виртуальная машина динамически находит и вызывает именно ту версию метода, которая определена в подклассе. Данный процесс еще называется dynamic method lookup.[[Polymorphism#Виды полиморфизма в Java|Dynamic]]

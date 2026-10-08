@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Using Objects week2 part 1.md",
+                "file": "just dont need/Using Objects week2 part 1.md",
                 "mode": "source",
                 "source": false
               },
@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Abstraction, Inheritance and Interfaces.md",
+                "file": "just dont need/Anand Panduranga(Mister Anand).md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Abstraction, Inheritance and Interfaces"
+              "title": "Anand Panduranga(Mister Anand)"
             }
           }
         ],
@@ -109,7 +109,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Abstraction, Inheritance and Interfaces.md",
+                "file": "just dont need/Anand Panduranga(Mister Anand).md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -119,7 +119,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Abstraction, Inheritance and Interfaces"
+              "title": "Backlinks for Anand Panduranga(Mister Anand)"
             }
           },
           {
@@ -128,12 +128,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Abstraction, Inheritance and Interfaces.md",
+                "file": "just dont need/Anand Panduranga(Mister Anand).md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Abstraction, Inheritance and Interfaces"
+              "title": "Outgoing links from Anand Panduranga(Mister Anand)"
             }
           },
           {
@@ -171,13 +171,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Abstraction, Inheritance and Interfaces.md",
+                "file": "just dont need/Anand Panduranga(Mister Anand).md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Abstraction, Inheritance and Interfaces"
+              "title": "Outline of Anand Panduranga(Mister Anand)"
             }
           }
         ]
@@ -200,10 +200,18 @@
   },
   "active": "57b468e7537c79b6",
   "lastOpenFiles": [
-    "Anand Panduranga(Mister Anand).md",
+    "images/Pasted image 20260921111850.png",
+    "images/Pasted image 20260921112754.png",
+    "images/Pasted image 20260921113319.png",
+    "just dont need/Project(Campus QuestStudent activities & achievement tracker).md",
+    "just dont need/Using Objects week2 part 1.md",
+    "just dont need/Anand Panduranga(Mister Anand).md",
+    "just dont need/Assessment.md",
+    "Polymorphism.md",
     "Abstraction, Inheritance and Interfaces.md",
-    "Using Objects week2 part 1.md",
-    "Project(Campus QuestStudent activities & achievement tracker).md",
-    "Assessment.md"
+    "Untitled 1.canvas",
+    "Untitled.canvas",
+    "just dont need",
+    "Untitled.md"
   ]
 }
