@@ -52,7 +52,14 @@ public class BankAccountDemo {
 
 
 		/* TEST IsaAccount here... */
-
+		var isaAcc = new lib.bankaccounts.IsaAccount(1000, 5, 100, 1000); // Remaining limit is 1000
+		System.out.println("\n" + isaAcc.toString());
+		isaAcc.deposit(600);
+		System.out.println("Balance: " + isaAcc.getBalance() + " | Limit remaining: " + isaAcc.getDepositRemaining());
+		isaAcc.deposit(401);
+		System.out.println("Balance: " + isaAcc.getBalance() + " | Limit remaining: " + isaAcc.getDepositRemaining());
+		isaAcc.resetDepositRemaining();
+		System.out.println("Limit remaining after reset: " + isaAcc.getDepositRemaining());
 
 
 		/* Create ArrayList to hold different types of bank account. */
@@ -65,6 +72,7 @@ public class BankAccountDemo {
 		/* ADD objects of type StudentAccount and IsaAccount once implemented */
 		banks.add(new lib.bankaccounts.StudentAccount(200, 500));
 		System.out.println("\nProcessing bank accounts in list...");
+		banks.add(new lib.bankaccounts.IsaAccount(500, 4, 100, 2000)); // Add instance to ArrayList[cite: 4]
 		//different type of object can be processed uniformly, this is known as polymorphism 
 		for (BankAccount b : banks) {
 			//subclass instances will either invoke inherited or overridden methods
