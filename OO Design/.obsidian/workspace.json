@@ -114,9 +114,37 @@
               "icon": "lucide-file",
               "title": "Aggregation and Composition"
             }
+          },
+          {
+            "id": "61dc85c233101f0d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Method chaining.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Method chaining"
+            }
+          },
+          {
+            "id": "cecae79b3a3b78f4",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Enums.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Enums"
+            }
           }
         ],
-        "currentTab": 7
+        "currentTab": 9
       }
     ],
     "direction": "vertical"
@@ -189,7 +217,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Aggregation and Composition.md",
+                "file": "Enums.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -199,7 +227,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Aggregation and Composition"
+              "title": "Backlinks for Enums"
             }
           },
           {
@@ -208,12 +236,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Aggregation and Composition.md",
+                "file": "Enums.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Aggregation and Composition"
+              "title": "Outgoing links from Enums"
             }
           },
           {
@@ -251,13 +279,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Aggregation and Composition.md",
+                "file": "Enums.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Aggregation and Composition"
+              "title": "Outline of Enums"
             }
           }
         ]
@@ -278,18 +306,20 @@
       "bases:Create new base": false
     }
   },
-  "active": "38b801e72bc3eef2",
+  "active": "cecae79b3a3b78f4",
   "lastOpenFiles": [
+    "Interface.md",
+    "Enums.md",
+    "Aggregation and Composition.md",
+    "Abstraction, Inheritance and Interfaces.md",
+    "Encapsulation.md",
+    "Method chaining.md",
     "just dont need/Using Objects week2 part 1.md",
     "just dont need/Project(Campus QuestStudent activities & achievement tracker).md",
     "just dont need/Anand Panduranga(Mister Anand).md",
     "just dont need/Assessment.md",
-    "Abstraction, Inheritance and Interfaces.md",
     "Polymorphism.md",
-    "Aggregation and Composition.md",
     "Lambda Expressions.md",
-    "Encapsulation.md",
-    "Interface.md",
     "Overriding.md",
     "Static Dynamic.md",
     "images/Pasted image 20260921111850.png",
