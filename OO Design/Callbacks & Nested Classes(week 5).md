@@ -119,7 +119,14 @@ playlist.sortPlaylist(
     (a, b) -> a.getArtist().compareTo(b.getArtist())
 
 );
+
 ```
+### Why lambdas work: functional interfaces
+- A functional interface has exactly one abstract method to implement.
+- Comparator<T'>
+	- One abstract method:
+	- int compare(T a, T b)
+	- A lambda supplies this method’s behaviour.
 ## Ascending ↔ descending
 - You can reverse a Comparator instead of rewriting the comparison logic.
 ```
