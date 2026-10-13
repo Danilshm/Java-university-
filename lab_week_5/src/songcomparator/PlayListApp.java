@@ -1,5 +1,6 @@
 package songcomparator;
 
+import java.util.Comparator;
 
 public class PlayListApp {
 
@@ -47,7 +48,30 @@ public class PlayListApp {
         
         
         //ADD CODE HERE...
-        
-               
+        System.out.println("Sorting playlist by duration...");
+        playlist.sortPlaylist(new SongDurationComparator());
+        System.out.println(playlist.getTrackListings());
+
+        System.out.println("Sorting playlist by duration (descending)...");
+        playlist.sortPlaylist(new SongDurationReverseComparator());
+        System.out.println(playlist.getTrackListings());
+        System.out.println("Sorting playlist by artist...");
+        playlist.sortPlaylist(new Comparator<Song>() {
+            @Override
+            public int compare(Song s1, Song s2) {
+                return s1.getArtist().compareTo(s2.getArtist());
+            }
+        });
+        System.out.println(playlist.getTrackListings());
+
+        System.out.println("Sorting playlist by artist (descending)...");
+        playlist.sortPlaylist((s1, s2) -> s2.getArtist().compareTo(s1.getArtist()));
+        System.out.println(playlist.getTrackListings());
+    }
+    private static class SongDurationReverseComparator implements Comparator<Song> {
+        @Override
+        public int compare(Song s1, Song s2) {
+            return Integer.compare(s2.getDuration(), s1.getDuration());
+        }
     }
 }

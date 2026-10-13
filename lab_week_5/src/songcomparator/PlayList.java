@@ -225,7 +225,9 @@ public class PlayList implements Iterable<Song> {
 		//Collections.sort(list); //or same as
 		songlist.sort(Comparator.naturalOrder());
 	}
-	
+    public void sortPlaylist(Comparator<Song> comparator) {
+        songlist.sort(comparator);
+    }
 	
     
 }
