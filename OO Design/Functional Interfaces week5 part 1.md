@@ -211,3 +211,244 @@ long shortCount = playlist.stream()
 
     .filter(shortTrack).count();
 ```
+## Primitive specialisations: avoid boxing
+- Generic interfaces use reference types. Primitive specialisations can avoid converting between a primitive and its wrapper.
+### Generic form 
+- Predicate<Integer'> receives an Integer.
+### Primitive form 
+- IntPredicate receives an int.
+### Why care?
+- It can avoid boxing/unboxing in suitable code; choose it when it fits the API.
+### Code
+```
+Predicate<Integer> genericEven =
+
+    i -> i % 2 == 0;
+
+IntPredicate primitiveEven =
+
+    i -> i % 2 == 0;
+
+System.out.println(primitiveEven.test(100)); // true
+```
+## Primitive predicates: same question, primitive input
+- Use the specialisation that matches the primitive input type.
+### IntPredicate 
+- int → boolean
+### LongPredicate
+- long → boolean
+### DoublePredicate 
+- double → boolean
+```
+IntPredicate even = i -> i % 2 == 0;
+
+System.out.println(even.test(100)); // true
+
+IntPredicate odd = i -> i % 2 != 0;
+
+System.out.println(odd.test(100));  // false
+```
+
+## Function and BiFunction: transform values
+- Function takes one input; BiFunction takes two. Both return a result.
+### Function<T,R>
+- One input → one result.
+### BiFunction<T,U,R>
+- Two inputs → one result.
+### Code
+```
+Function<Integer, Integer> addFive =
+
+    x -> x + 5;
+
+BiFunction<Integer, Integer, Integer> add =
+
+    (x, y) -> x + y;
+
+System.out.println(addFive.apply(7)); // 12
+
+System.out.println(add.apply(4, 3)); // 7
+```
+## More useful building blocks
+- UnaryOperator is a Function where input and output types are the same.
+### UnaryOperator<Double'>
+- double value in → double value out (wrapper type here).
+### Predicate<Song'>
+- Tests a song condition.
+### Consumer<Song'>
+- print
+### Code
+```
+UnaryOperator<Double> squared = x -> x * x;
+
+Predicate<Song> startsWithM =
+
+    s -> s.getTitle().startsWith("M");
+
+Consumer<Song> printDuration =
+
+    s -> System.out.println(s.getDuration());
+```
+## Call the functional method
+- A functional interface variable behaves like an object with a method: apply, test, accept or get.
+### apply()
+- Function / BiFunction / Operator
+### test()
+- Predicate
+### accept()
+- Consumer
+## Or pass the function to another method
+- Streams accept functional interfaces so they can apply your behaviour to elements.
+### map(Function)
+- TRansfrom each element
+### filter(Predicate)
+- Keep matching elements.
+### anyMatch(Predicate)
+- Ask whether at least one element matches.
+### Code
+```
+List<String> titles = playlist.stream()
+
+    .map(Song::getTitle)
+
+    .toList();
+
+boolean hasShortSong = playlist.stream()
+
+    .anyMatch(s -> s.getDuration() < 200);
+```
+## Stream.of: create a tiny test dataset
+- Small streams are useful for checking behaviour before applying it to a full collection.
+### Numbers
+- Stream.of(1, 2, 3, 4, 5)
+### Strings
+- Stream.of("apple", "pear", "banana")
+### Songs 
+- Stream.of(songA, songB, songC)
+### Code
+```
+Stream.of("Jimmy Jimmy Jimmy Aaja",
+
+            "Awara Hoon",
+
+            "Zooby Zooby")
+
+    .filter(title -> title.length() < 12)
+
+    .forEach(System.out::println);
+    
+```
+## From a fixed rule to a reusable rule
+- Hard-coding a letter makes a predicate inflexible. A Function can create a predicate for whichever letter is supplied.
+### Fixed
+- startsWithM only checks M.
+### Configurable
+- startsWith("J") or startsWith("Z") creates a new rule.
+### Code
+```
+Function<String, Predicate<Song>> startsWith =
+
+    letter -> song -> song.getTitle().startsWith(letter);
+
+Predicate<Song> startsWithJ = startsWith.apply("J");
+
+Predicate<Song> startsWithZ = startsWith.apply("Z");
+```
+## Higher-order functions: functions that work with functions
+- A method is higher-order when it accepts a function, returns one, or both.
+### Pass one in 
+- stream.filter(predicate)
+### Return one 
+- startsWith("M") returns a Predicate<Song'>.
+### Compose
+- Combine smaller behaviours to build richer behaviour.
+## What does listMap do?
+- It applies the supplied Function to each input element and collects the results in a new list.
+### Input
+- List<String'>: apple, kiwi, banana
+### Rule
+- s -> s.length()
+### Output 
+- List<Integer'>: 5, 4, 6
+### Code
+```
+static <T, R> List<R> listMap(
+
+        List<T> list, Function<T, R> f) {
+
+    List<R> result = new ArrayList<>();
+
+    for (T item : list) {
+
+        result.add(f.apply(item));
+
+    }
+
+    return result;
+
+}
+
+// listMap(words, s -> s.length())
+```
+## Method references: when the lambda just forwards
+- If a lambda only calls an existing method with the same input and output, a method reference may be clearer.
+### Lambda
+- song -> song.getDuration()
+### Method reference
+- Song::getDuration
+### Rule of thumb
+- Use it when no extra transformation is needed.
+### Code
+```
+ToIntFunction<Song> duration =
+
+    Song::getDuration;
+
+// Equivalent lambda:
+
+// song -> song.getDuration()
+```
+## Three kinds of method references
+- Read the reference around `::`: the left side tells you the class or object; the right side names the method.
+### Static method 
+- Integer::parseInt
+### Arbitrary object's instance method
+- String::length
+### Existing object's instance method
+- System.out::println
+### Code
+```
+// Static method
+
+Function<String, Integer> parse = Integer::parseInt;
+
+// Instance method on the incoming object
+
+ToIntFunction<String> length = String::length;
+
+// Existing object
+
+Consumer<Song> show = System.out::println;
+```
+## Follow the parameters
+- Method references work when Java can map the functional method's parameters to the referenced method.
+### Static
+- Both inputs are passed to the static method.
+### Arbitrary instance
+- First input is the target object; remaining inputs become method arguments.
+### Existing instance
+- Inputs are passed to the already named object’s method.
+### Code
+``` 
+// (x, y) -> Integer.compare(x, y)
+
+BiFunction<Integer, Integer, Integer> cmp =
+
+    (x, y) -> Integer.compare(x, y);
+
+// Method reference version uses a compatible
+
+// functional type such as Comparator<Integer>:
+
+Comparator<Integer> comparator = Integer::compare;
+```
