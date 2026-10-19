@@ -40,3 +40,39 @@
 - **Processing** begins when a terminal operation is called.
 - This can avoid work that is not needed
 - *Think of writing a recipe versus actually cooking it.*
+## Short-circuiting
+- Some terminal operations can ddcide the answer before reading every element
+- findFirst() stops when it finds the first matching element.
+- anyMatch() same like findFirst but you can apply rules on it
+- allMatch()
+	- do all words contain the letter 't'?
+	- The->yes; cat->yes; sat->yes
+## Stateful vs stateless operations
+- **Stateless**: map() and filter() can process each element independently 
+- **Stateful**:distinct() may need to remember earlier values
+- **Stateful**: sorted() needs to see all input before it can produce sorted output. 
+- **stateful** operations can require extra memory or more processing 
+- A pipeline of stateless operations is often easier to process in one pass.
+## Why sorted() changes the flow 
+- Example: filter words containing 'a', then sort, then uppercase the first result
+- The filter may inspect every input words first 
+- Sorting needs the complete set of surviving words
+## Avoid interfering with the source 
+- Do not modify the source collection while the pipeline is processing it 
+- Changing the source during processing can cause errors on unpredictable behaviour 
+- Prefer operations that return results rather than mutate the source
+
+## Slicing:limit() and skip()
+- limit(3) keeps at most the first three elements
+- skip(3) ignores the first 3 elements and keeps the rest
+## Mapping: map()
+- map(fuction) applies a transformation to each element 
+- Example
+	- words.map(n->w.toUpperCase())
+	- names.map(n->n.length())
+## Peeking for debugging  
+- peek() lets you inspect elements as they pass through a pipeline 
+- it can print values before and after a filter or map 
+- Useful for understanding what each stage receives 
+- peek() runs only when the pipeline is actually consumed
+- Do not use peek() as the main place for important program logic.
