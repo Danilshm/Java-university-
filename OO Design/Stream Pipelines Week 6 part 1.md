@@ -76,3 +76,25 @@
 - Useful for understanding what each stage receives 
 - peek() runs only when the pipeline is actually consumed
 - Do not use peek() as the main place for important program logic.
+## Empty and concatenated streams 
+- Stream.empty() creates a stream with no elements 
+- An empty stream is useful when a method needs to return a stream but has no data 
+## Primitive stream specialisations 
+- Stream<T'> is used for object elements 
+- IntStream, LongStream and DoubleStream are specialized for primitive numebrs.
+- They avoid some boxing/unboxing  overhead
+- They provide numeric operations such as sum() and average().
+## map() vs mapToInt()
+- map() ca turn a word into its length but still produce Stream<Integer;>.
+- mapToInt() produces an IntStream of primitive int values 
+## Collectors: joining strings
+- joining(",) combines strings with a delimiter.
+### Summing and averaging 
+- summingInt() adds values mapped to integers.
+- averagingInt() calculates their average.
+## Collecting into List, Set and Map
+- toList() gathers elements into a List.
+- toSet() gathers unique elements into a Set.
+- toMap(keyFunction, valueFunction) builds key-value pairs.
+- Example: word length as key, word as value
+- Map keys must be unqie unless you provide a merge function 
