@@ -71,7 +71,7 @@
 	- words.map(n->w.toUpperCase())
 	- names.map(n->n.length())
 ## Peeking for debugging  
-- peek() lets you inspect elements as they pass through a pipeline 
+- **peek**() lets you inspect elements as they pass through a pipeline 
 - it can print values before and after a filter or map 
 - Useful for understanding what each stage receives 
 - peek() runs only when the pipeline is actually consumed
