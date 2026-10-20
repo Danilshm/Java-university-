@@ -97,4 +97,22 @@
 - toSet() gathers unique elements into a Set.
 - toMap(keyFunction, valueFunction) builds key-value pairs.
 - Example: word length as key, word as value
-- Map keys must be unqie unless you provide a merge function 
+- Map keys must be unique unless you provide a merge function 
+## Map with duplicate keys 
+- Words such as one and two both have length 3.
+- Using word length as a Map key can therefore create duplicates
+- Without a merge function, toMap() can throw an exception for duplicate keys.
+## Grouping with groupingBy() 
+- groupingBy() groups elements by a classifier function 
+- Example: group words by their first letter
+- The result in a Map whose values are lists by default
+## Parallel streams: the basic idea:
+- parallelStream() asks Java to process a collection in parallel
+- parallel() can switch a stream pipeline to parallel mode
+### How it works
+- Java uses a ForkJoinPool to coordinate work 
+- Different parts of a stream can be processed by different worker threads
+- The common pool is usually sufficient for ordinary tasks 
+- Thread coordination and combining results also have a cost 
+- Focus on the problem first; do not tune pools without a reason
+- 
