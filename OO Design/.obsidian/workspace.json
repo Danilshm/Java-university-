@@ -76,9 +76,23 @@
               "icon": "lucide-file",
               "title": "Anand Panduranga(Mister Anand)"
             }
+          },
+          {
+            "id": "8fcb67ff0b0eb756",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Files, Input and Output and Exceptions.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Files, Input and Output and Exceptions"
+            }
           }
         ],
-        "currentTab": 4
+        "currentTab": 5
       }
     ],
     "direction": "vertical"
@@ -151,7 +165,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "just dont need/Anand Panduranga(Mister Anand).md",
+                "file": "Files, Input and Output and Exceptions.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -161,7 +175,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Anand Panduranga(Mister Anand)"
+              "title": "Backlinks for Files, Input and Output and Exceptions"
             }
           },
           {
@@ -170,12 +184,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "just dont need/Anand Panduranga(Mister Anand).md",
+                "file": "Files, Input and Output and Exceptions.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Anand Panduranga(Mister Anand)"
+              "title": "Outgoing links from Files, Input and Output and Exceptions"
             }
           },
           {
@@ -213,13 +227,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "just dont need/Anand Panduranga(Mister Anand).md",
+                "file": "Files, Input and Output and Exceptions.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Anand Panduranga(Mister Anand)"
+              "title": "Outline of Files, Input and Output and Exceptions"
             }
           }
         ]
@@ -241,8 +255,10 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "84b348a9f2fd7215",
+  "active": "8fcb67ff0b0eb756",
   "lastOpenFiles": [
+    "just dont need/Anand Panduranga(Mister Anand).md",
+    "Files, Input and Output and Exceptions.md",
     "Stream Pipelines Week 6 part 1.md",
     "Untitled.md",
     "Polymorphism.md",
@@ -267,7 +283,6 @@
     "Enums.md",
     "Encapsulation.md",
     "Overriding.md",
-    "just dont need/Anand Panduranga(Mister Anand).md",
     "just dont need/Using Objects week2 part 1.md",
     "just dont need/Project(Campus QuestStudent activities & achievement tracker).md",
     "just dont need/Assessment.md",

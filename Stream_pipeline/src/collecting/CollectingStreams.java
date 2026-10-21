@@ -100,7 +100,8 @@ public class CollectingStreams {
 		 * a single average value of type double and then output this. This method can be used in
 		 * a similar way to summingInt, with the notable difference being that it returns a double.
 		 */
-		
+		double avgUnitPrice = orders.stream().collect(averagingInt(OrderLine::getUnitPrice));
+		System.out.println("Average unit price of all orders is " + avgUnitPrice + " pence.");
 		
 		
 		/* TASK 2. Use the map(...) operation to map each order in the list of orders to its (String) id and then
