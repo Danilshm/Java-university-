@@ -115,4 +115,18 @@
 - The common pool is usually sufficient for ordinary tasks 
 - Thread coordination and combining results also have a cost 
 - Focus on the problem first; do not tune pools without a reason
-- 
+## Encounter order and unordered() 
+- A List normally has an encounter order.
+- Parallel streams may need extra work to preserve that order 
+- unordered() signals that the exact order is not important
+- Some operations, such as distinct(), or limit(), may benefit.
+## Concurent collectors 
+- Parallel collection may need to merge partial maps 
+- groupingByConcurrent() and toConcurrentMap() are designed for concurrent collection
+- They can reduce some merging overhead.
+## When should you use parallel streams? 
+- For small data sets, parallel overhead may outweigh any gain 
+## Summary: stream pipeline essentials 
+- A stream processes data from a source. 
+- Intermediate operations transform or select elements 
+- A terminal operation triggers processing and gives a result or action 

@@ -69,12 +69,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Stream Pipelines Week 6 part 1.md",
+                "file": "just dont need/Anand Panduranga(Mister Anand).md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Stream Pipelines Week 6 part 1"
+              "title": "Anand Panduranga(Mister Anand)"
             }
           }
         ],
@@ -151,7 +151,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Stream Pipelines Week 6 part 1.md",
+                "file": "just dont need/Anand Panduranga(Mister Anand).md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -161,7 +161,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Stream Pipelines Week 6 part 1"
+              "title": "Backlinks for Anand Panduranga(Mister Anand)"
             }
           },
           {
@@ -170,12 +170,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Stream Pipelines Week 6 part 1.md",
+                "file": "just dont need/Anand Panduranga(Mister Anand).md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Stream Pipelines Week 6 part 1"
+              "title": "Outgoing links from Anand Panduranga(Mister Anand)"
             }
           },
           {
@@ -213,13 +213,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Stream Pipelines Week 6 part 1.md",
+                "file": "just dont need/Anand Panduranga(Mister Anand).md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Stream Pipelines Week 6 part 1"
+              "title": "Outline of Anand Panduranga(Mister Anand)"
             }
           }
         ]
@@ -243,8 +243,8 @@
   },
   "active": "84b348a9f2fd7215",
   "lastOpenFiles": [
-    "Untitled.md",
     "Stream Pipelines Week 6 part 1.md",
+    "Untitled.md",
     "Polymorphism.md",
     "Abstraction, Inheritance and Interfaces.md",
     "Aggregation and Composition.md",
