@@ -61,3 +61,10 @@ if(day<0 || day>366) {
 - Try-with-resources ensures the stream is closed.
 - The pipeline can filter lines and print only matches 
 - Handle IOException if opening or closing the file fails
+# Exception
+## Checked exceptions; compiler ask you to decide 
+- A checked exception ust be caught or declared
+- IOException is a common example in file work.
+## Unchecked exceptions: common programming problems 
+- NumberFormatException can occur when text cannot be parsed as a number 
+- NullPointerException can occur when code uses a null reference incorrectly
