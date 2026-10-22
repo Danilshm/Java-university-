@@ -28,3 +28,6 @@
 - NER and NED enable named entity linking(NEL)
 ### Event extraction 
 - EE is the process of identifying and extracting knowledge about events in text data.
+## IE with Amazon Comprehead 
+- Amazon Comprehead uses pretrained models to do the following. 
+- Detect entities and e.t.c.
