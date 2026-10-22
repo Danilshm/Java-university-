@@ -48,3 +48,16 @@ if(day<0 || day>366) {
 - ObjectInputStream wraps it and adds readObject() 
 - readObject() returns a general Object value 
 - Cast to the excepted type only when the saved data is compatible 
+# Files utility 
+- Files.writeString(path,text) writes text to a path
+- Files.readString(path) reads text from a path
+- Files.readAllString(path)
+### Files utility: bytes and paths
+- Files.readAllBytes(path) reads file contents as a byte array 
+- Files.write(path, bytes) writes bytes to a path
+## Files.lines() and resource safety
+- FIles.lines(path) provides a stream of lines.
+- The stream may keep the file open while it is being used
+- Try-with-resources ensures the stream is closed.
+- The pipeline can filter lines and print only matches 
+- Handle IOException if opening or closing the file fails
