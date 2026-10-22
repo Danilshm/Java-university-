@@ -68,3 +68,21 @@ if(day<0 || day>366) {
 ## Unchecked exceptions: common programming problems 
 - NumberFormatException can occur when text cannot be parsed as a number 
 - NullPointerException can occur when code uses a null reference incorrectly
+  indexOutOfBoundsException
+## Exception hierarchy: Throwable
+- The source diagram shows Throwable at the top of the hierarchy
+- Error and Exception are separate branches under Throwable
+## What belongs inside try?
+- Put the operations that may throw the exception inside 
+## finally and cleanup 
+- finally runs after try/catch whether an exception occurs or not, under normal control flow.
+- It has traditionally been used to close resources.
+- Closing can itself throw and IOException, so cleanup 
+## Try-with-resources vs manual close 
+- Manual close can be forgotten when an exception interrupts the code 
+- A finally block improves cleanup reliability but adds nesting
+- try-with-resources closes declared resources automatically
+## Throws or catch: choose the right layer 
+- Catch when this method can recover or provide a meaningful response 
+- Declare throws when the caller should decide what to do 
+- A catch block that merely hides the error may make debugging harder
