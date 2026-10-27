@@ -111,7 +111,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Java FX.md",
+                "file": "useful/Java FX.md",
                 "mode": "source",
                 "source": false
               },
@@ -193,7 +193,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Java FX.md",
+                "file": "useful/Java FX.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -212,7 +212,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Java FX.md",
+                "file": "useful/Java FX.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
@@ -255,7 +255,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Java FX.md",
+                "file": "useful/Java FX.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -283,37 +283,36 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "9efdfb3b7f010c41",
+  "active": "4461ce0d07c82840",
   "lastOpenFiles": [
-    "Nexus project.md",
-    "Java FX.md",
+    "useful",
+    "just dont need/Anand Panduranga(Mister Anand).md",
+    "Static Dynamic.md",
+    "Polymorphism.md",
+    "Stream Pipelines Week 6 part 1.md",
+    "The collections Framework(list,set,map).md",
+    "The java.util.function toolkit week5.md",
+    "useful/Java FX.md",
     "Untitled 1.md",
+    "Untitled.md",
+    "Nexus project.md",
     "ML/Supervised and Unsupervised Learning.md",
     "ML/Information extraction.md",
     "Files, Input and Output and Exceptions.md",
-    "Stream Pipelines Week 6 part 1.md",
-    "just dont need/Anand Panduranga(Mister Anand).md",
-    "Untitled.md",
-    "Polymorphism.md",
     "Abstraction, Inheritance and Interfaces.md",
     "Aggregation and Composition.md",
     "Constructor.md",
     "Functional Interfaces week5 part 1.md",
     "Lambda Expressions.md",
     "Interface.md",
-    "Untitled",
-    "The collections Framework(list,set,map).md",
     "ML",
     "Callbacks & Nested Classes(week 5).md",
     "Drawing 2026-10-16 09.34.28.excalidraw.md",
-    "The java.util.function toolkit week5.md",
     "images/Pasted image 20261014093852.png",
-    "Static Dynamic.md",
     "Method chaining.md",
     "Enums.md",
     "Encapsulation.md",
     "Overriding.md",
-    "just dont need/Using Objects week2 part 1.md",
     "images/Pasted image 20260921111850.png",
     "images/Pasted image 20260921112754.png",
     "images/Pasted image 20260921113319.png",
