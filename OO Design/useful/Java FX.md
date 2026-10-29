@@ -75,7 +75,6 @@ Branch nodes contain children. Leaf nodes, such as buttons and txt fields, do no
 - Border + Color 
 	- Help separate sections and create visual hierarchy
 - Java code = structure '' CSS = visual style
-# ВОт бы он ее джахнул аккуратненько не спеша черемша и будет его жизнь прекрасна. Потом возьмет ее в жены и будет счастлив всю свою жизнь
 # CSS example : read the rule 
 ```
 .button {
@@ -83,3 +82,13 @@ Branch nodes contain children. Leaf nodes, such as buttons and txt fields, do no
 .....
 }
 ```
+# Recap
+- Stage 
+	- Window
+- Scene 
+	- Gui content
+- Nodes
+	- Controls+panes
+- Layout 
+	- Arrange nodes
+- Css

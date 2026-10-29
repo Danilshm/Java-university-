@@ -1,5 +1,4 @@
 package layouts;
-
 import javafx.application.Application;
 import javafx.geometry.Insets;
 import javafx.geometry.Pos;
@@ -163,8 +162,7 @@ public class FXLayout extends Application {
 		
 		//set the root to one of the layouts.
 		//===Uncomment one of the following lines===
-		root = getFlowPane(); title ="FlowPane";
-//		root = getHbox();  title = "HBox";
+		root = getHbox();  title = "HBox";
 //		root = getVbox(); title ="VBox";
 //		root = getGridPane(); title ="GridPane";
 //		root = getTilePane(); title ="TilePane";
