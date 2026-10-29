@@ -111,12 +111,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "useful/Java FX.md",
+                "file": "Nexus project.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Java FX"
+              "title": "Nexus project"
             }
           }
         ],
@@ -193,7 +193,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "useful/Java FX.md",
+                "file": "Nexus project.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -203,7 +203,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Java FX"
+              "title": "Backlinks for Nexus project"
             }
           },
           {
@@ -212,12 +212,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "useful/Java FX.md",
+                "file": "Nexus project.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Java FX"
+              "title": "Outgoing links from Nexus project"
             }
           },
           {
@@ -255,13 +255,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "useful/Java FX.md",
+                "file": "Nexus project.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Java FX"
+              "title": "Outline of Nexus project"
             }
           }
         ]
@@ -283,8 +283,9 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "4461ce0d07c82840",
+  "active": "9efdfb3b7f010c41",
   "lastOpenFiles": [
+    "useful/Java FX.md",
     "useful",
     "just dont need/Anand Panduranga(Mister Anand).md",
     "Static Dynamic.md",
@@ -292,7 +293,6 @@
     "Stream Pipelines Week 6 part 1.md",
     "The collections Framework(list,set,map).md",
     "The java.util.function toolkit week5.md",
-    "useful/Java FX.md",
     "Untitled 1.md",
     "Untitled.md",
     "Nexus project.md",
