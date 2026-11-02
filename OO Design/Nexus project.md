@@ -33,54 +33,6 @@ Best suited if we focus on <font color="#ff0000">Object-Oriented design</font>, 
 # Slide 5: Roadmap & Future Sprints
 - Planned enhancements for subsequent checkpoints (File I/O persistence, GUI design, exception handling).
 - Next steps for scaling the application.
-
-# The goal: a working story, not just pretty screens 
-1) Show
-- A clear user problem
-- realistic user journey
-2) work
-- Buttons do what they promise
-- Forms accept valid input
-1) Explain 
-- Why you designed in this way
-- What you tested
-- What you would improve next
-# First decision: what is your MVP
-- Must have
-	- Core user task works end to end
-	- Essential screens and navigation
-	- Clear feedback after actions
-	- Demo data
-- Nice to have
-	- Decorative animation 
-	- Extra settings and etc.
-# Map the user journey before polishing UI
-1) Enter(open app/ sign in)
-2) Act(search, select or fill)
-3) Review(check details)
-4) Confirm(submit/save)
-5) Feedback(success or clear error)
-- Ask
-	- Может ли юзер зайдя на сайт сразу всё понять 
-# Screen checklist
-- Orientation
-	- Clear page tittle
-	- Obvious primary action 
-	- Consistent navigation 
-- Input
-	- Labels explain what to enter
-	- Required fields marked
-	- Useful examples
-- Feedback
-	- Success confirmation
-- Consistency 
-	- Same fonts, colours and spacing 
-# Validation 
-- Empty: What if a required field is blank
-- Invalid: what if an email/ number is malformed
-- and etc/
-# Today goal(29.10.26)
-- A complete vertical slice 
 # Final
 - Your final presentation should tell a story
 	- Problem: Who is the user? What need are you solving?
@@ -88,6 +40,15 @@ Best suited if we focus on <font color="#ff0000">Object-Oriented design</font>, 
 	- Live demo: Complete the main journey from start to result.
 	- Evidence: Show tests performed and one issue you fixed.
 	- next step: Name one limitation and a realistic improvement.
+1.	Problem: Who is the user and what need are you solving?
+- Primary User
+	- Who: University students and academic project team members managing multiple concurrent coursework deadlines, group deliverables, and daily routines.
+- Need Being Solved
+	- Core Problem: Existing task management tools are often overcomplicated or fragmented, making it hard for students to quickly log and verify daily academic priorities without friction.
+	2.	Solution: Show the interface and explain the design choices behind it.
+	3.	Live demo: Walk through the main journey from start to result.
+	4.	Evidence: Show the tests you ran and one issue you found and fixed. The test table has four cases, all marked PASS.
+	5.	Next step: Name one limitation and a realistic improvement. Data is not saved between runs (File I/O persistence is in the plan), so the next step is saving to a file.
 ## GUI Test Suite — Vertical Slice Milestone
 
 | Test Case           | Input / Action                                                 | Expected Result                                                                     | Pass? |

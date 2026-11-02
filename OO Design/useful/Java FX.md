@@ -92,3 +92,17 @@ Branch nodes contain children. Leaf nodes, such as buttons and txt fields, do no
 - Layout 
 	- Arrange nodes
 - Css
+# Enabling Keyboard operations-
+- Menus support two keyboard helpers: **mnemonics** and **accelerators**.
+- Mnemonics help you open or navigate a menu using a key with Alt.
+- Accelerators are shortcuts that run a menu command directly.
+	- Note: mnemonics keys attached to menus and menu items are triggered by using the ‘alt’ key.
+- The navigation character to be pressed with alt is determined by the position of a hidden underscore ‘_’, which acts as a flag to the mnemonic parser, e.g.
+   - new Menu("_Help"); //= alt+h … ("H_elp"); //= alt+e
+- You can assign a shortcut to a menu item, for example:
+    ```
+    menuItem.setAccelerator(
+
+    KeyCombination.keyCombination("SHORTCUT+N"));
+    ```
+    SHORTCUT is control on windows and command button on mac

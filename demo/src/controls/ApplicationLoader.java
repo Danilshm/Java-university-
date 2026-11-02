@@ -1,5 +1,6 @@
 package controls;
 
+
 import javafx.application.Application;
 import javafx.stage.Stage;
 import javafx.scene.Parent;
@@ -12,7 +13,7 @@ public class ApplicationLoader extends Application {
 	@Override
 	/* Build the scene graph in this method */
 	public void init() throws Exception {
-		root = new FXControlsRootPane();
+		root = new FXControlsEventsRootPane();
 	}
 
 	@Override
@@ -20,7 +21,7 @@ public class ApplicationLoader extends Application {
 
 		Scene scene = new Scene(root);
 
-		stage.setTitle("JavaFX Control Catalogue");
+		stage.setTitle("JavaFX Control Catalogue with Event Handling");
 		stage.setScene(scene);
 		stage.show();
 	}
