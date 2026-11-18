@@ -1,0 +1,27 @@
+Name: Isk Danana
+PNo: P2893333
+Email: shsj@gmail.com
+Date: 2026-11-16
+Course: Software Engineering
+
+-----------------------------------
+
+Selected modules:
+=========
+Module code: CTEC3451, Module name: Development Project, Credits: 30, Mandatory? yes, Block: BLOCK_3_4
+
+Module code: CTEC3701, Module name: Software Development: Methods & Standards, Credits: 30, Mandatory? yes, Block: BLOCK_1
+
+Module code: CTEC3703, Module name: Mobile App Development and Big Data, Credits: 30, Mandatory? yes, Block: BLOCK_2
+
+Module code: CTEC3704, Module name: Functional Programming, Credits: 30, Mandatory? no, Block: BLOCK_3_4
+
+
+
+-----------------------------------
+
+Reserved modules:
+=========
+Module code: CTEC3705, Module name: Advanced Web Development, Credits: 30, Block: BLOCK_3_4
+
+
